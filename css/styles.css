@@ -1,0 +1,49 @@
+.section {
+  padding: 20px;
+  background-color: blue;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  transition: background-color 5000ms linear;
+}
+
+.icon-main {
+  margin-left: 8px;
+  transform: translateY(0px);
+  fill: red;
+
+  transition: transform 250ms linear;
+}
+
+.icon-secondary {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  fill: red;
+  transform: translateY(40px);
+
+  transition: transform 250ms linear;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #8ccbaa;
+}
+
+.button:hover .icon-main {
+  fill: green;
+  transform: translateY(-40px);
+}
+
+.button:hover .icon-secondary {
+  fill: purple;
+  transform: translateY(0);
+}
